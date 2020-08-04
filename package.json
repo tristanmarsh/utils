@@ -20,6 +20,7 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
+    "@emotion/styled": ">=10",
     "react": ">=16"
   },
   "husky": {
@@ -29,13 +30,16 @@
   },
   "prettier": {
     "printWidth": 80,
-    "semi": true,
+    "semi": false,
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "mylib",
+  "name": "@tristanmarsh/utils",
   "author": "Tristan Marsh",
-  "module": "dist/mylib.esm.js",
+  "module": "dist/utils.esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@storybook/addon-actions": "^5.3.19",
@@ -56,5 +60,9 @@
     "tsdx": "^0.13.2",
     "tslib": "^2.0.0",
     "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "framer-motion": "^2.0.0",
+    "np": "^6.3.2"
   }
 }

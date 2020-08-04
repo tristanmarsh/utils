@@ -1,7 +1,11 @@
 module.exports = {
-  stories: ['../stories/**/*.stories.(ts|tsx)'],
-  addons: ['@storybook/addon-actions', '@storybook/addon-links', '@storybook/addon-docs'],
-  webpackFinal: async (config) => {
+  stories: ['../src/**/*.stories.(ts|tsx)'],
+  addons: [
+    '@storybook/addon-actions',
+    '@storybook/addon-links',
+    '@storybook/addon-docs',
+  ],
+  webpackFinal: async config => {
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
       use: [
@@ -15,10 +19,10 @@ module.exports = {
           loader: require.resolve('react-docgen-typescript-loader'),
         },
       ],
-    });
+    })
 
-    config.resolve.extensions.push('.ts', '.tsx');
+    config.resolve.extensions.push('.ts', '.tsx')
 
-    return config;
+    return config
   },
-};
+}
