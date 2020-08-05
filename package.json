@@ -18,7 +18,8 @@
     "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "cm": "git-cz"
+    "cm": "git-cz",
+    "release": "np"
   },
   "peerDependencies": {
     "@emotion/styled": ">=10",
