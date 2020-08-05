@@ -1,6 +1,12 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "description": "Utils is a generic name I chose to describe some react components I made with framer-motion",
+  "keywords": [
+    "react",
+    "framer motion",
+    "mouse transform"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -40,6 +46,7 @@
   "name": "@tristanmarsh/utils",
   "author": "Tristan Marsh",
   "module": "dist/utils.esm.js",
+  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },

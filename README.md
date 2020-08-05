@@ -1,3 +1,9 @@
+# @tristanmarsh/utils
+
+Utils is a generic name I chose to describe some react components I made with framer-motion
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 # TSDX React User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
