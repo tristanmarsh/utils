@@ -7,6 +7,10 @@
     "framer motion",
     "mouse transform"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tristanmarsh/utils.git"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -28,7 +32,9 @@
     "release": "np"
   },
   "peerDependencies": {
+    "@emotion/core": ">=10",
     "@emotion/styled": ">=10",
+    "framer-motion": ">=2",
     "react": ">=16"
   },
   "husky": {
@@ -63,6 +69,7 @@
     "babel-loader": "^8.1.0",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "3.2.0",
+    "framer-motion": "^2.4.1",
     "husky": "^4.2.5",
     "np": "^6.3.2",
     "react": "^16.13.1",
@@ -73,9 +80,6 @@
     "tsdx": "^0.13.2",
     "tslib": "^2.0.0",
     "typescript": "^3.9.6"
-  },
-  "dependencies": {
-    "framer-motion": "^2.3.0"
   },
   "config": {
     "commitizen": {
