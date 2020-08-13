@@ -1,22 +1,30 @@
 {
+  "name": "@tristanmarsh/utils",
+  "description": "Some pre-configured components to help with using framer-motion",
   "version": "1.0.2",
-  "license": "MIT",
-  "description": "Utils is a generic name I chose to describe some react components I made with framer-motion",
   "keywords": [
     "react",
     "framer motion",
     "mouse transform"
   ],
+  "author": "Tristan Marsh <tristanmarsh@live.com> (https://tristanmarsh.net)",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tristanmarsh/utils.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": "https://github.com/tristanmarsh/utils/issues",
+  "module": "dist/utils.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
+  "sideEffects": false,
   "engines": {
     "node": ">=10"
   },
@@ -36,25 +44,6 @@
     "@emotion/styled": ">=10",
     "framer-motion": ">=2",
     "react": ">=16"
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "name": "@tristanmarsh/utils",
-  "author": "Tristan Marsh",
-  "module": "dist/utils.esm.js",
-  "sideEffects": false,
-  "publishConfig": {
-    "access": "public"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -80,6 +69,18 @@
     "tsdx": "^0.13.2",
     "tslib": "^2.0.0",
     "typescript": "^3.9.6"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
   "config": {
     "commitizen": {
