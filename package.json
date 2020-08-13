@@ -1,7 +1,7 @@
 {
   "name": "@tristanmarsh/utils",
   "description": "Some pre-configured components to help with using framer-motion",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "keywords": [
     "react",
     "framer motion",
