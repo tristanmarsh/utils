@@ -37,7 +37,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "cm": "git-cz",
-    "release": "np"
+    "release": "np",
+    "analyze": "source-map-explorer 'dist/*.js'"
   },
   "peerDependencies": {
     "@emotion/core": ">=10",
