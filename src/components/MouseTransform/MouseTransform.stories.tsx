@@ -2,6 +2,7 @@ import { MouseTransform } from './MouseTransform'
 import React from 'react'
 import { motion } from 'framer-motion'
 import styled from '@emotion/styled'
+
 export default {
   title: 'MouseTransform',
 }
@@ -50,6 +51,7 @@ export const Default = () => (
     </MouseTransform>
   </>
 )
+
 export const Several = () => (
   <>
     {Array(8)
