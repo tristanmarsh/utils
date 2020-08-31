@@ -35,7 +35,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook:build": "build-storybook",
+    "storybook:deploy": "storybook-to-ghpages",
     "cm": "git-cz",
     "release": "np",
     "analyze": "source-map-explorer 'dist/*.js'"
