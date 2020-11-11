@@ -3,8 +3,8 @@
 Utils is a generic name I chose to describe some react components I made with framer-motion
 
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://tristanmarsh.github.io/utils)
-
-
+![min](https://badgen.net/bundlephobia/min/@tristanmarsh/utils)
+![min + zip](https://badgen.net/bundlephobia/minzip/@tristanmarsh/utils)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # TSDX React User Guide
