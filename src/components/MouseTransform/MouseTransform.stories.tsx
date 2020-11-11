@@ -1,11 +1,19 @@
-import { MouseTransform } from './MouseTransform'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { MouseTransform, MouseTransformProps } from './MouseTransform'
+
 import React from 'react'
 import { motion } from 'framer-motion'
 import styled from '@emotion/styled'
 
 export default {
   title: 'MouseTransform',
-}
+  component: MouseTransform,
+  argTypes: {
+    angle: {
+      control: { type: 'range', min: 0, max: 180, step: 1 },
+    },
+  },
+} as Meta
 
 const Card = styled(motion.div)`
   position: relative;
@@ -38,9 +46,9 @@ const Card = styled(motion.div)`
   }
 `
 
-export const Default = () => (
+export const Default: Story<MouseTransformProps> = ({ angle, perspective }) => (
   <>
-    <MouseTransform>
+    <MouseTransform angle={angle} perspective={perspective}>
       <Card>
         <h1>Check out my mouse position transform</h1>
         <img
@@ -52,12 +60,12 @@ export const Default = () => (
   </>
 )
 
-export const Several = () => (
+export const Several: Story<MouseTransformProps> = ({ angle, perspective }) => (
   <>
     {Array(8)
       .fill(0)
       .map((num, i) => (
-        <MouseTransform angle={Math.pow(2, i)} key={num + i}>
+        <MouseTransform angle={angle} key={num + i} perspective={perspective}>
           <Card
             initial={{
               scale: 0.99,

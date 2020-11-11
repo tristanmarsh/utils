@@ -1,5 +1,5 @@
-import { HTMLMotionProps, motion, useSpring, useTransform } from 'framer-motion'
 import React, { FC } from 'react'
+import { motion, useSpring, useTransform } from 'framer-motion'
 
 import styled from '@emotion/styled'
 
@@ -12,13 +12,22 @@ const Parent = styled(motion.div)<ParentProps>`
   perspective: ${props => props.perspective};
 `
 
-interface MouseTransformProps extends HTMLMotionProps<'div'> {
+export interface MouseTransformProps {
+  /**
+   * Checks if the button should be disabled
+   */
   angle?: number
+  /**
+   */
   perspective?: number
 }
 
-// TODO: convert HOC to hook...
-// const [x, y] = useMouseTransform({onMouseMove, options: {perspective, angle} }): {transformX, transformY}
+//
+/**
+ * Wrapper component providing a 3D transform for any children "looking" in the direction of the mouse
+ * TODO: convert HOC to hook...
+ * const [x, y] = useMouseTransform({onMouseMove, options: {perspective, angle} }): {transformX, transformY}
+ */
 export const MouseTransform: FC<MouseTransformProps> = ({
   angle = 5,
   children,
